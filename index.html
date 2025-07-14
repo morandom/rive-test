@@ -1,9 +1,22 @@
-<canvas id="rive-canvas"></canvas>
-<script src="https://unpkg.com/@rive-app/canvas"></script>
-<script>
-  new rive.Rive({
-    src: "myfirst.riv",
-    canvas: document.getElementById("rive-canvas"),
-    autoplay: true,
-  });
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sayla Rive Demo</title>
+  <style>
+    body { margin: 0; background: black; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    canvas { width: 80vw; height: auto; }
+  </style>
+</head>
+<body>
+  <canvas id="rive-canvas"></canvas>
+  <script src="https://unpkg.com/@rive-app/canvas"></script>
+  <script>
+    new rive.Rive({
+      src: "myfirst.riv",
+      canvas: document.getElementById("rive-canvas"),
+      autoplay: true
+    });
+  </script>
+</body>
+</html>
